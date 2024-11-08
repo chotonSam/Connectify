@@ -13,10 +13,11 @@ export default function Header() {
     <nav className="sticky top-0 z-50 border-b border-[#3F3F3F] bg-[#1E1F24] py-3">
       <div className="container flex flex-col items-center justify-between gap-6 sm:flex-row">
         <Link to="/">
-          <img
-            className="max-w-[100px] rounded-full "
-            src="./assets/images/logo.svg"
-          />
+          <div>
+            <h1 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
+              Connectify
+            </h1>
+          </div>
         </Link>
 
         <div className="flex items-center space-x-4">
