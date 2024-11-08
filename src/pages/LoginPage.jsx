@@ -9,14 +9,16 @@ export default function LoginPage() {
           <div className="container grid items-center gap-8 lg:grid-cols-2">
             <div>
               <img
-                className="mb-12 max-w-full max-lg:hidden"
+                className="mb-12 sm:max-w-full  w-80"
                 src="./assets/images/auth_illustration.png"
                 alt="auth_illustration"
               />
               <div>
-                <h1 className="mb-3 text-4xl font-bold lg:text-[40px]">
-                  Connectify
-                </h1>
+                <div>
+                  <h1 class=" mb-3 text-4xl lg:text-[40px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
+                    Connectify
+                  </h1>
+                </div>
                 <p className="max-w-[452px] text-gray-600/95 lg:text-lg">
                   Create a social media app with features like, showing the
                   post, post details, reactions, comments and profile.
