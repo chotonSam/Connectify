@@ -16,7 +16,7 @@ export default function NewPost() {
           setShowPostEntry={setShowPostEntry}
         />
       ) : (
-        <div className="card sm:my-8 sm:py-8">
+        <div className="card my-6 sm:py-8">
           <div className="flex-center mb-3 gap-2 lg:gap-4">
             <img
               className="w-10 h-10 rounded-full "
