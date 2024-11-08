@@ -19,7 +19,7 @@ const PostCommentList = ({ comments }) => {
   return (
     <div className="space-y-4 divide-y divide-lighterDark pl-2 lg:pl-3">
       {/* Flex container to align dropdown to the left */}
-      <div className="flex justify-end mb-2 ">
+      <div className="flex justify-end mb-2 max-md:text-sm">
         <select
           id="sortOrder"
           className=" bg-transparent  text-[#B8BBBF]  focus:outline-none "

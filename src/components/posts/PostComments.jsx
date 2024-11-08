@@ -1,6 +1,7 @@
 import { useState } from "react";
 import useAuth from "../../hooks/useAuth";
 import useAxios from "../../hooks/useAxios";
+import useUser from "../../hooks/useUser";
 import PostCommentList from "./PostCommentList";
 
 const PostComments = ({ post }) => {
@@ -9,6 +10,8 @@ const PostComments = ({ post }) => {
   const [comment, setComment] = useState("");
   const { api } = useAxios();
   const [isOpen, setIsOpen] = useState(false);
+
+  const user = useUser();
   const addComment = async (event) => {
     const keyCode = event.keyCode;
 
@@ -35,8 +38,8 @@ const PostComments = ({ post }) => {
         <img
           className="max-w-7 max-h-7 rounded-full lg:max-h-[34px] lg:max-w-[34px]"
           src={
-            auth?.user?.avatar
-              ? `${import.meta.env.VITE_SERVER_BASE_URL}/${auth?.user?.avatar} `
+            user?.avatar
+              ? `${import.meta.env.VITE_SERVER_BASE_URL}/${user?.avatar} `
               : "/assets/icons/profile.jpg"
           }
           alt="avatar"

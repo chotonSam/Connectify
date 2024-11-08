@@ -130,7 +130,7 @@ export default function PostEntry({ showPostEntry, setShowPostEntry }) {
                 <div className="mb-3 flex items-center justify-between gap-2 lg:mb-6 lg:gap-4">
                   <div className="flex items-center gap-3">
                     <img
-                      className="max-w-10 max-h-10 rounded-full lg:max-h-[58px] lg:max-w-[58px]"
+                      className="max-w-10 max-h-10 rounded-full "
                       src={
                         user?.avatar
                           ? `${import.meta.env.VITE_SERVER_BASE_URL}/${
@@ -155,7 +155,11 @@ export default function PostEntry({ showPostEntry, setShowPostEntry }) {
                     className="btn-primary cursor-pointer !text-gray-100"
                     htmlFor="photo"
                   >
-                    <img src="./assets/icons/addPhoto.svg" alt="Add Photo" />
+                    <img
+                      className="sm:w-7 w-5"
+                      src="./assets/icons/addPhoto.svg"
+                      alt="Add Photo"
+                    />
                     Add Photo
                   </label>
 

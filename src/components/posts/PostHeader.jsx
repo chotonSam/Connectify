@@ -102,7 +102,7 @@ const PostHeader = ({ post, setCommentModal }) => {
     <header className="flex items-center justify-between gap-4">
       <div className="flex items-center gap-3">
         <img
-          className="max-w-10 max-h-10 rounded-full lg:max-h-[58px] lg:max-w-[58px]"
+          className="max-w-10 max-h-10 rounded-full "
           src={
             avatarURL.endsWith("/null")
               ? "/assets/icons/profile.jpg"
@@ -111,13 +111,12 @@ const PostHeader = ({ post, setCommentModal }) => {
           alt="avatar"
         />
         <div>
-          <h6 className="text-lg lg:text-xl">{post?.author?.name}</h6>
+          <h6 className="sm:text-lg text-base">{post?.author?.name}</h6>
           <div className="flex items-center gap-1.5">
-            <img src={TimeIcon} alt="time" />
-            <span className="text-sm text-gray-400 lg:text-base">{`${getDateDifferenceFromNow(
+            <img className="sm:w-4 w-3" src={TimeIcon} alt="time" />
+            <span className="text-xs sm:text-sm text-gray-400 ">{`${getDateDifferenceFromNow(
               post?.createAt
             )} `}</span>
-            <span className="text-sm text-gray-400 lg:text-base"></span>
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ export default function PostList({ posts }) {
 
   return (
     <>
-      <div className="flex justify-end mb-2">
+      <div className="flex justify-end mb-2 max-md:text-sm">
         <select
           id="sortOrder"
           className="bg-transparent text-[#B8BBBF] focus:outline-none"

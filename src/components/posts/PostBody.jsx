@@ -2,8 +2,10 @@ import React from "react";
 
 const PostBody = ({ poster, content }) => {
   return (
-    <div className="border-b border-[#3F3F3F] py-4 lg:py-5 lg:text-xl">
-      <p className="mb-4">{content ?? "No Content Available"}</p>
+    <div className="border-b border-[#3F3F3F] py-4 lg:py-5 ">
+      <p className="mb-4 text-sm sm:text-base">
+        {content ?? "No Content Available"}
+      </p>
 
       <div className="flex items-center justify-center overflow-hidden">
         {poster && (

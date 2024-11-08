@@ -42,7 +42,7 @@ export default function Header() {
               <span className="text-base font-medium ">{user?.firstName}</span>
 
               <img
-                className="max-h-[32px] max-w-[32px] rounded-full"
+                className="w-10 h-10 rounded-full"
                 src={
                   user.avatar
                     ? `${import.meta.env.VITE_SERVER_BASE_URL}/${user.avatar}`
